@@ -39,13 +39,14 @@ nav{
 .navbar-right{
     display: flex;
     margin-right: 4em;
-    font-size: 1.3em;
+    font-size: 1em;
     list-style: none;
-    padding-left: 1em;
-    padding-right: 1em;
 }
 
-
+.navbar-right li{
+    padding-left:1em;
+    padding-right:1em;
+}
 .navbar-right li a:hover{
     color: aqua;
 }
@@ -137,10 +138,14 @@ footer p{
     }
     
     .navbar-right{
+        padding-left: 0;
         width: 100%;
         flex-direction: column;
         align-items: center;
         display: none;
+    }
+    .navbar-right li{
+        padding: 0 0 0 0;
     }
 
     .navbar-right.active{
