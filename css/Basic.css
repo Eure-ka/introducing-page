@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Padauk', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    background-color: whitesmoke;
+    width: 100%;
+    position: fixed;
+    height: auto;
+}
+nav a:visited{
+    color: black;
+}
+
+nav a:link{
+    color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-title{
+    font-size: 2em;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    font-size: 700;
+}
+
+.navbar-right{
+    display: flex;
+    margin-right: 4em;
+    font-size: 1.3em;
+    list-style: none;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+.navbar-right li a:hover{
+    color: aqua;
+}
+
+.toggle_btn{
+    cursor: pointer;
+    width: 3em;
+    height: 3em;
+    background-color: transparent;
+    display: none;
+    border-radius: 4px;
+    border-color: black;
+    background-image: none;
+    margin-top: 0.5em;
+    border: 1px solid transparent;
+}
+
+.toggle_btn i{
+    align-items: center;
+    font-size: 2em;
+    padding-right: 1em;
+    color: white;
+}
+
+.desc1{
+    display: block;
+    width: 100%;
+    height: 500px;
+    background-color: pink;
+}
+.desc2{
+    display: block;
+    width: 100%;
+    height: 500px;
+    background-color: yellow;
+}
+.desc3{
+    display: block;
+    width: 100%;
+    height: 500px;
+    background-color: red;
+}
+.desc4{
+    display: block;
+    width: 100%;
+    height: 500px;
+    background-color: purple;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+}
+
+footer i{
+    font-size: 3em;
+}
+footer p{
+    font-size: 1em;
+}
+@media screen and (max-width: 767px) {
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    a {
+        color: white;
+    }
+    nav a:link{
+        color: white;
+    }
+    nav a:visited{
+        color: white;
+    }
+
+    nav{
+        background-color: #000;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-title{
+        font-size: 1.5em;
+    }
+    .toggle_btn{
+        position: absolute;
+        right: 1em;
+        display: inline;
+    }
+    
+    .navbar-right{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .navbar-right.active{
+        display: flex;
+    }
+
+    .navbar-right.active li{
+        width: 100%;
+        text-align: center;
+    }
+
+    footer i{
+        color: black;
+        font-size: 2em;
+    }
+    footer p{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+}
+
