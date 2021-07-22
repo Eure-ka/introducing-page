@@ -1,4 +1,4 @@
-const  toggleBtn = document.querySelector('.toggle_btn');
+const  toggleBtn = document.querySelector('.toggle-btn');
 const  nav_list = document.querySelector('.navbar-right');
 
 function show_list(){
