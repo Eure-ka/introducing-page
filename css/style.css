@@ -41,8 +41,6 @@ header{
     justify-content: space-between;
 }
 
-
-
 .navbar .nav-title{
     font-size: 2rem;
     padding-left: 1rem;
@@ -95,14 +93,11 @@ header{
 .main-title{
     position: relative;
     width: 100%;
-    height:auto;
     background-color: #90d5eb;
     margin-top: 5rem;
+    padding-bottom: 10.2rem;
 }
 
-.main-title .inner{
-    align-items: center;
-}
 
 .main-title .inner .subject{
     text-align: center;
@@ -123,11 +118,65 @@ header{
     font-size: 1.5rem;
 }
 
+.main-title .inner .more_btn{
+    margin-top: 4rem;
+    display: inline-block;
+    border: none;
+    border-radius: 40px;
+    background-color: #9932CC;
+    color:#fff;
+    padding: 1rem 2rem;
+    font-weight: 400;
+    font-size: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .about-me{
     display: block;
     width: 100%;
-    height: 500px;
-    background-color: pink;
+    height: 100%;
+}
+
+.about-me .inner .about-title{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.about-me .inner .about-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.about-me .inner .about-content .about-block{
+    width: 100%;
+    max-width: 20rem;
+    display: flex;
+    padding: 3rem 0;
+    margin: 0 auto;
+}
+
+.about-me .inner .about-content .about-block i{
+    font-size: 2rem;
+    padding-right: 1rem;
+}
+
+.about-me .inner .about-content .about-block .about_text .small-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.about-me .inner .about-content .about-block .about_text .small-content{
+    font-size: 1.2rem;
+    text-align: start;
 }
 
 .desc2{
@@ -162,6 +211,10 @@ footer p{
     a {
         all:unset;
     }
+    header{
+        width: 100%;
+        height: 3rem;
+    }
     .navbar nav a:link{
         text-decoration: none;
         color: #fff;
@@ -170,15 +223,16 @@ footer p{
         text-decoration: none;
         color: #fff;
     }
-
+    
     .navbar nav{
+        display: flex;
         background-color: #000;
-        height: auto;
+        width:  100%;
+        height: 100%;
         flex-direction: column;
-        align-items: flex-start;
     }
     .navbar .nav-title{
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
     .toggle-btn{
         position: absolute;
@@ -189,16 +243,18 @@ footer p{
     .navbar .navbar-right{
         padding-left: 0;
         width: 100%;
-        flex-direction: column;
-        align-items: center;
         display: none;
     }
     .navbar .navbar-right li{
-        padding: 0 0 0 0;
+        font-size: 1.6rem;
+        padding: 0.5rem 0  ;
     }
 
     .navbar-right.active{
         display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        height: 100%;
     }
 
     .navbar-right.active li{
@@ -206,6 +262,9 @@ footer p{
         text-align: center;
     }
 
+    .main-title {
+        margin-top: 4rem;
+    };
     footer i{
         color: black;
         font-size: 2rem;
