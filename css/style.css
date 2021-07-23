@@ -201,9 +201,45 @@ footer{
 footer i{
     font-size: 3rem;
 }
+
 footer p{
     font-size: 1rem;
 }
+
+#backtotop {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 4px solid #3f464d;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition-property: background-color, opacity, visibility;
+    transition-duration: 0.3s, 0.5s, 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+  }
+  
+#backtotop::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+    line-height: 40px;
+    color: #000;
+
+  }
+  
+  #backtotop.show:hover {
+    cursor: pointer;
+  }
+  
+  #backtotop.show {
+    opacity: 1;
+    visibility: visible;
+    background-color: #fff;
+  }
 @media screen and (max-width: 767px) {
     body{
         margin: 0 auto;
