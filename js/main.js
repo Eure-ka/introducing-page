@@ -1,5 +1,6 @@
 const  toggleBtn = document.querySelector('.toggle-btn');
 const  nav_list = document.querySelector('.navbar-right');
+const home_btn = document.querySelector('.nav-title');
 const backToTop = document.getElementById('backtotop');
 
 
@@ -37,3 +38,4 @@ function moveBackToTop() {
 
 window.addEventListener('scroll', checkScroll);
 backToTop.addEventListener('click', moveBackToTop);
+home_btn.addEventListener('click',moveBackToTop);
