@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 *{
     box-sizing: border-box;
     scroll-behavior:smooth;
@@ -241,7 +242,7 @@ header{
     background-color:#b5c7ed;
 }
 
-.works .inner .works-title{
+.works .inner .works-real-title{
     padding-top: 1rem;
     padding-bottom: 3rem;
     text-align: center;
@@ -268,13 +269,13 @@ header{
 .works .inner .results .works-box .works_title{
     padding : 1rem 1rem;
     text-align: center;
+    font-family: 'Russo One', sans-serif;
     font-size: 1.5rem;
-    font-weight: 800;
 }
 
 .works .inner .results .works-box .indiv-works{
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: space-around;
 }
 
