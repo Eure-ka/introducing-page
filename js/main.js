@@ -2,14 +2,15 @@ const  toggleBtn = document.querySelector('.toggle-btn');
 const  nav_list = document.querySelector('.navbar-right');
 const home_btn = document.querySelector('.nav-title');
 const backToTop = document.getElementById('backtotop');
-
+const go_aboutme = document.querySelector('.AmBtn');
+const go_skills = document.querySelector('.SkBtn');
+const go_works = document.querySelector('.wkBtn');
+const moreBtn = document.querySelector('.more_btn');
 
 
 function show_list(){
     nav_list.classList.toggle('active');
 }
-toggleBtn.addEventListener('click',show_list);
-
 
 function checkScroll() {
     /*
@@ -36,6 +37,23 @@ function moveBackToTop() {
     }
 }
 
+function moveAboutme(){
+    document.querySelector('.about-me').scrollIntoView();
+}
+
+function moveSkills(){
+    document.querySelector('.skills .inner').scrollIntoView();
+}
+
+function moveWorks(){
+    document.querySelector('.works').scrollIntoView();
+}
+
+toggleBtn.addEventListener('click',show_list);
 window.addEventListener('scroll', checkScroll);
 backToTop.addEventListener('click', moveBackToTop);
 home_btn.addEventListener('click',moveBackToTop);
+go_aboutme.addEventListener('click',moveAboutme);
+go_skills.addEventListener('click',moveSkills);
+go_works.addEventListener('click',moveWorks);
+moreBtn.addEventListener('click',moveAboutme);

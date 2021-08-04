@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 *{
     box-sizing: border-box;
     scroll-behavior:smooth;
@@ -67,7 +67,7 @@ header{
     padding-right:1rem;
 }
 
-.navbar .navbar-right li a:hover{
+.navbar .navbar-right li:hover{
     cursor:pointer;
     color:#00ffff
 }
@@ -147,7 +147,7 @@ header{
 }
 
 .about-me .inner .about-title{
-    padding-top: 1rem;
+    padding-top: 4rem;
     text-align: center;
     font-size: 2rem;
     font-weight: 500;
@@ -195,7 +195,7 @@ header{
 
 
 .skills .inner .skills-title{
-    padding-top: 1rem;
+    padding-top: 4rem;
     padding-bottom: 3rem;
     text-align: center;
     font-size: 2rem;
@@ -243,7 +243,7 @@ header{
 }
 
 .works .inner .works-real-title{
-    padding-top: 1rem;
+    padding-top: 4rem;
     padding-bottom: 3rem;
     text-align: center;
     font-size: 2rem;
@@ -269,8 +269,9 @@ header{
 .works .inner .results .works-box .works_title{
     padding : 1rem 1rem;
     text-align: center;
-    font-family: 'Russo One', sans-serif;
+    font-family: 'Jua', sans-serif;
     font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .works .inner .results .works-box .indiv-works{
@@ -323,9 +324,15 @@ header{
 
 .works .inner .results .works-box .indiv-works .indiv-works_text_sub .indiv-works_text_subtext{
     display: inline-block;
-    font-weight: 500;
-    font-size: 1rem;
+    font-weight: 700;
+    font-size: 0.9rem;
     width: calc(100% - 8.4rem);
+}
+
+.works .inner .results .works-box .indiv-works .indiv-works_text_sub .indiv-works_text_subtext span{
+    color: #258ddb;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 footer{
