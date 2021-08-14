@@ -329,7 +329,17 @@ header{
     width: calc(100% - 8.4rem);
 }
 
-.works .inner .results .works-box .indiv-works .indiv-works_text_sub .indiv-works_text_subtext span{
+.works .inner .results .works-box .indiv-works .indiv-works_text_sub .indiv-works_text_subtext a{
+    color: #258ddb;
+    cursor: pointer;
+}
+
+.works .inner .results .works-box .indiv-works .indiv-works_text_sub .indiv-works_text_subtext a:link{
+    color: #258ddb;
+    cursor: pointer;
+}
+
+.works .inner .results .works-box .indiv-works .indiv-works_text_sub .indiv-works_text_subtext a:hover{
     color: #258ddb;
     text-decoration: underline;
     cursor: pointer;
@@ -470,6 +480,91 @@ footer p{
 
     .skills .inner .boxes .box-content{
         margin: 1rem 2rem;
+    }
+
+    .works .inner .results{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .works .inner .results .works-box{
+        background-color: #fff;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+    .works .inner .results .works-box .indiv-works{
+        display: block;
+    }
+    
+    .works .inner .results .works-box .indiv-works .indiv-works-display{
+        width: 100%;
+        height: 25rem;
+        padding: 2rem 2rem;
+    }
+    
+    .works .inner .results .works-box .indiv-works .indiv-works-display img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .works .inner .results .works-box .indiv-works .indiv-works_text{
+        max-width: 35rem;
+        height: 100%;
+        padding: 2rem 0;
+    }
+    
+    .works .inner .results .works-box .indiv-works .indiv-works_text_main{
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    
+    .works .inner .results .works-box .indiv-works .indiv-works_text_sub{
+        display: block;
+        padding: 1rem 0;
+    }
+    
+    .works .inner .results .works-box .indiv-works .indiv-works_text_sub .indiv-works_text_subtitle::before{
+        content: "\f0e7";
+        font-family: FontAwesome;
+        display: inline;
+        padding-right: 0.5rem;
+    }
+    .works .inner .results .works-box .indiv-works .indiv-works_text_sub .indiv-works_text_subtitle{
+        display: inline-block;
+        font-weight: 800;
+        font-size: 1.2rem;
+        padding-right: 1rem;
+        width: 8.4rem;
+    }
+    
+    .works .inner .results .works-box .indiv-works .indiv-works_text_sub .indiv-works_text_subtext{
+        display: inline-block;
+        font-weight: 700;
+        font-size: 1rem;
+        width: calc(100% - 8.4rem);
+    }
+    
+    .works .inner .results .works-box .indiv-works .indiv-works_text_sub .indiv-works_text_subtext a{
+        color: #258ddb;
+        cursor: pointer;
+    }
+    
+    .works .inner .results .works-box .indiv-works .indiv-works_text_sub .indiv-works_text_subtext a:link{
+        color: #258ddb;
+        cursor: pointer;
+    }
+    
+    .works .inner .results .works-box .indiv-works .indiv-works_text_sub .indiv-works_text_subtext a:hover{
+        color: #258ddb;
+        text-decoration: underline;
+        cursor: pointer;
     }
 
     #backtotop{
